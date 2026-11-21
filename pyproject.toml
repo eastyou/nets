@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nets"
+version = "0.1.0"
+description = "立体图形展开图：长方体与正方体的表面积、体积和可打印折叠图"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "geometry", "cuboid", "net", "surface-area", "printable"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+nets = "nets.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/nets"
+Source = "https://github.com/eastyou/nets"
+
+[tool.setuptools]
+packages = ["nets"]
